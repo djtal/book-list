@@ -1,0 +1,8 @@
+<h2>All my books ({{count}})</h2>
+<ul>
+{{#each book in model }}
+  <li>{{book.title}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}
