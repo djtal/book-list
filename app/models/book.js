@@ -14,4 +14,4 @@ Book.reopenClass({
   ]
 });
 
-export default Book
+export default Book;

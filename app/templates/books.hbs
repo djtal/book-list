@@ -1,13 +1,15 @@
-<h2>All my books ({{count}})</h2>
 
-<ul>
-{{#each book in model }}
-  <li>
-    {{#link-to 'books.book' book}}
-      {{book.title}}
-    {{/link-to}}
-  </li>
-{{/each}}
+<div class="col-md-4">
+  <h3>All my books ({{count}})</h3>
+  <ul>
+  {{#each book in model }}
+    <li>
+      {{#link-to 'books.book' book}}
+        {{book.title}}
+      {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
+</div>
 
 {{outlet}}
