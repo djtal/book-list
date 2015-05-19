@@ -1,12 +1,15 @@
 <h3>Add a new book</h3>
-<form class="form-horizontal">
+<form>
   <div class="form-group">
     <label for="input-book-title">Title</label>
-    {{input value=model.title  size="50" class="form-control" id="input-book-title"}}
+    {{input value=title  size="50" class="form-control" id="input-book-title"}}
   </div>
   <div class="form-group">
     <label for="input-book-description">Description</label>
-    {{textarea value=model.description cols="80" rows="6" class="form-control" id="input-book-description"}}
+    {{textarea value=description cols="80" rows="6" class="form-control" id="input-book-description"}}
   </div>
+  <button type="submit" class="btn btn-primary" {{action "createBook"}}>Save</button>
+  or
+  Cancel
 </form
 {{outlet}}
