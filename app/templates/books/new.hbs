@@ -1,5 +1,5 @@
 <h3>Add a new book</h3>
-<form>
+<form {{action "createBook" on="submit"}}>
   <div class="form-group">
     <label for="input-book-title">Title</label>
     {{input value=title  size="50" class="form-control" id="input-book-title"}}
@@ -8,7 +8,7 @@
     <label for="input-book-description">Description</label>
     {{textarea value=description cols="80" rows="6" class="form-control" id="input-book-description"}}
   </div>
-  <button type="submit" class="btn btn-primary" {{action "createBook"}}>Save</button>
+  <button type="submit" class="btn btn-primary"  disabled={{isAddButtonDisabled}}>Save</button>
   or
   Cancel
 </form
