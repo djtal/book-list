@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       var controller = this.get('controller');
       var title = controller.get('title');
       var description = controller.get('description');
-      var book = this.get('store').createRecord('book', { title: title, description, description });
+      var book = this.get('store').createRecord('book', { title: title, description: description });
       book.save().then(function(book) {
         controller.set('title', '');
         controller.set('description', '');
